@@ -52,7 +52,7 @@ public class RegisterMailSender extends AbstractMailSender {
     protected String resolveContent(String content, Object... args) {
         // 去数据库/配置文件中查询网站配置
         String websiteLink = "";
-        String websiteEmail = "lyz202008010404@163.com";
+        String websiteEmail = "xxx";
         return super.resolveContent(content, Stream.of(args, new Object[]{websiteLink, websiteEmail}).flatMap(Arrays::stream).toArray());
     }
 
