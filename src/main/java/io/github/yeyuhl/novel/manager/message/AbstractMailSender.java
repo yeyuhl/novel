@@ -25,7 +25,7 @@ public abstract class AbstractMailSender extends AbstractMessageSender {
     @Override
     protected void sendMessage(Long toUserId, String messageTitle, String messageContent) {
         // 根据消息接收方的用户ID查询出消息接收方的邮件地址
-        String toEmail = "lyz202008010404@163.com";
+        String toEmail = "xxx";
         // 开始发送邮件
         log.info("发送 HTML 邮件开始：{},{},{}", toEmail, messageTitle, messageContent);
         // 使用 MimeMessage，MIME 协议
